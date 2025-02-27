@@ -178,7 +178,7 @@ header {
 }
 
 .nav-link:hover {
-    color: var(--Soft-Red);
+    color: var(--light-blue);
     cursor: pointer;
 }
 
@@ -716,7 +716,7 @@ li {
 
 
 /* form  section start */
-#formSection {
+#contact {
     background-color: var(--dark-blue);
 }
 
