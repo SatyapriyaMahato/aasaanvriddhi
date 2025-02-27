@@ -1,10 +1,15 @@
 // menu section
-const menuBtn = document.querySelector(".menu-button");
-menuBtn.addEventListener("click", function () {
-    document.querySelector(".site-logo").classList.toggle("alt-logo");
-    document.querySelector(".menu-social-icons").classList.toggle("hidden");
-    document.body.classList.toggle("fixed-position");
-})
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuLinks = document.querySelectorAll(".menu a");
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            menuToggle.checked = false; // Uncheck the checkbox to close the menu
+        });
+    });
+});
+
 
 // feature section
 const featureLinks = [...document.querySelectorAll(".feature-link")];
