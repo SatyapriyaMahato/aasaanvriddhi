@@ -173,6 +173,10 @@ header {
 
 }
 
+.site-logo:hover {
+    cursor: pointer;
+}
+
 .nav-link {
     transition: all 0.2s ease-out;
 }
