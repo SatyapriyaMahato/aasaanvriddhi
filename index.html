@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../aasaanvriddhi/assets/img/av-favicon-r.ico">
 
     <title>AasanVriddhi</title>
     <link rel="stylesheet" href="../aasaanvriddhi/assets/css/style.css  ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <script src="../aasaanvriddhi/assets/js/script.js" defer></script>
+
 
 </head>
 
@@ -382,18 +383,60 @@
             </div>
         </section>
         <section id="contact">
+            <div class="div-contact-head container">
+                <h2>Contact Us</h2>
+            </div>
             <div class="div-form container">
-                <p>35,000+ already joined</p>
-                <h3>Stay up-to-date with what we’re doing</h3>
-                <form class="div-input" id="form" action="/">
-                    <div class="input-div">
-                        <input id="user_email" type="text" placeholder="Enter your email address">
-                        <div class="error-msg"><i>Whoops, make sure its and email</i></div>
-                        <img class="error-icon" src="../aasaanvriddhi/assets/img/icon-error.svg" alt="error icon">
-                    </div>
+                <div class="div-form-left"><img src="./assets/img/av-contactus.svg" alt="contact-form image">
+                </div>
+                <div class="div-form-right">
+                    <form method="POST" id="form">
 
-                    <button class="contact-btn btn" type="submit">Subscribe</button>
-                </form>
+                        <input type="hidden" name="access_key" value="7f297fa2-3006-4e20-ae24-5c8792ebadf1">
+                        <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                        <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+                        <!-- Custom Form Data -->
+                        <div class="input-group-row">
+                            <div class="input-group">
+                                <label>First Name</label>
+                                <input type="text" name="name" id="first_name" placeholder="John" required>
+                                <div class="error-message">Please provide your first name.</div>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Last Name</label>
+                                <input type="text" name="last_name" id="lname" placeholder="Doe" required>
+                                <div class="error-message">Please provide your last name.</div>
+                            </div>
+                        </div>
+                        <div class="input-group-row">
+                            <div class="input-group">
+                                <label>Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="you@company.com" required>
+                                <div class="error-message">Please provide a valid email address.</div>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Phone Number</label>
+                                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required>
+                                <div class="error-message">Please provide your phone number.</div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Your Message</label>
+                            <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                                required></textarea>
+                            <div class="error-message">Please enter your message.</div>
+                        </div>
+
+                        <button type="submit" class="hero-btn1 btn">Submit</button>
+
+                        <div id="result"></div>
+
+                    </form>
+                </div>
             </div>
         </section>
     </main>
