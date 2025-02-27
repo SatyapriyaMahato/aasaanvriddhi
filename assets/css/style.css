@@ -503,6 +503,8 @@ li {
     color: #666;
     line-height: 1.6;
     letter-spacing: 0;
+    font-size: 1.6rem;
+    text-transform: none;
 }
 
 .about-btn {
