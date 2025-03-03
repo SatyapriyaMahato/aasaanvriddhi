@@ -22,6 +22,8 @@
     --Very-Dark-Blue: rgb(37, 43, 70);
 }
 
+
+
 html {
     font-size: 62.5%;
     font-family: 'Rubik', sans-serif;
@@ -113,11 +115,11 @@ img {
     height: auto;
 }
 
-.login-btn {
+.course-btn {
     background-color: var(--light-blue);
 }
 
-.login-btn:hover {
+.course-btn:hover {
     border: 2px solid var(--light-blue);
     background-color: #fff;
     color: var(--light-blue);
@@ -133,7 +135,8 @@ img {
 /*--------------- Header -------------*/
 header {
     z-index: 4;
-    margin: 0 rem;
+    background-color: var(--White);
+    z-index: 999;
 }
 
 .top-nav {
@@ -187,10 +190,6 @@ header {
 }
 
 /*--------------- menu style start ---------------*/
-header {
-    background-color: var(--White);
-    z-index: 999;
-}
 
 a {
     text-decoration: none;
@@ -275,6 +274,8 @@ li {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu>li {
@@ -456,7 +457,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
     background-color: white;
     flex-wrap: wrap;
 }
@@ -1054,7 +1054,7 @@ button:hover {
 @media (max-width: 768px) {
 
     header {
-        padding: 2em 0;
+        padding: 3rem 0;
     }
 
     .menu-button-container {
@@ -1063,6 +1063,7 @@ button:hover {
 
     .top-nav {
         height: 20px;
+        padding: 0 2rem;
     }
 
     .menu {
@@ -1075,6 +1076,8 @@ button:hover {
         justify-content: center;
         align-items: center;
     }
+
+
 
     #menu-toggle~.menu li {
         height: 0;
@@ -1098,6 +1101,10 @@ button:hover {
         width: 100%;
         color: rgb(255, 255, 255);
         background-color: #ffffff;
+    }
+
+    #menu-toggle:checked~.menu .nav-btn {
+        height: 6rem;
     }
 
     /* hero section start */
