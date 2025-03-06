@@ -1066,12 +1066,8 @@ button:hover {
     fill: #555;
 }
 
-
-
-.course-grid,
-.report-grid {
+.course-grid {
     display: flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     gap: 8rem;
     padding: 0 7rem;
     justify-content: space-between;
