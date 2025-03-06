@@ -721,7 +721,6 @@ li {
 
 .faqs {
     margin-top: 4em;
-    width: 46%;
     display: flex;
     flex-direction: column;
 }
@@ -788,11 +787,6 @@ li {
 
 /* faq  section end */
 
-
-/* form  section start */
-#contact {
-    /* background-color: var(--dark-blue); */
-}
 
 .div-form {
     display: flex;
@@ -1032,6 +1026,181 @@ button:hover {
 
 
 /* footer  section end */
+
+
+
+
+
+
+
+
+
+
+/*---------- course-page-----------*/
+.course-page-hero {
+    padding: 0 7rem;
+    background: #f5f5f5;
+}
+
+.course-page-hero h1 {
+    font-size: 10rem;
+    font-weight: 500;
+    padding-top: 10rem;
+    color: black;
+}
+
+.course-page-hero p {
+    font-size: 2rem;
+    color: #555;
+}
+
+.arrow {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.arrow :hover {
+    cursor: pointer;
+    fill: #555;
+}
+
+
+
+.course-grid,
+.report-grid {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    gap: 8rem;
+    padding: 0 7rem;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2rem;
+    position: absolute;
+    bottom: 12rem;
+    background: rgba(255, 255, 255);
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-mid {
+    margin-top: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-img img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+
+.card-mid-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+
+.card:hover .card-content {
+    transform: translateY(40%);
+}
+
+.card:hover .card-image {
+    transform: translateY(-30%);
+}
+
+.card:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.author {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.course-card-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy-now-btn {
+    padding: 1rem 1.5rem;
+    background: var(--dark-blue);
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 200;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buy-now-btn:hover {
+    border: 2px solid var(--dark-blue);
+    background-color: #fff;
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.learn-more {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 @media (max-width: 1024px) {
     .footer-columns {
