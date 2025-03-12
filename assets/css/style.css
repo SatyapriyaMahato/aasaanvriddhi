@@ -1364,6 +1364,24 @@ button:hover {
         flex-direction: column;
     }
 
+
+    /*course page*/
+    .course-page-hero {
+        padding: 0 4rem;
+    }
+
+    .course-page-hero h1 {
+        font-size: 5rem;
+    }
+
+    .course-grid {
+        padding: 0rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
     /* form  section end */
 
     /* footer  section start */
