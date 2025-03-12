@@ -999,13 +999,13 @@ button:hover {
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
-    padding-top: 15px;
+    padding: 15px 0;
     border-top: 1px solid #333;
 }
 
 .footer-bottom ul {
     list-style: none;
-    padding: 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -1075,10 +1075,10 @@ button:hover {
 
 .card {
     display: flex;
-    width: 100%;
+    width: 30rem;
     background: #fff;
     border-radius: .5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     overflow: hidden;
     transition: 0.3s ease-in-out;
     position: relative;
@@ -1088,6 +1088,7 @@ button:hover {
     width: 100%;
     display: block;
     transition: 0.3s ease-in-out;
+    object-fit: contain;
 }
 
 .card-content {
@@ -1128,7 +1129,7 @@ button:hover {
 
 
 .card:hover .card-content {
-    transform: translateY(40%);
+    transform: translateY(52%);
 }
 
 .card:hover .card-image {
@@ -1159,14 +1160,14 @@ button:hover {
     margin-top: 5px;
 }
 
-.description {
-    font-size: 14px;
+.description p {
+    font-size: 1.2rem;
     color: #666;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .course-card-buttons {
-    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
