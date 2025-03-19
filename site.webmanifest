@@ -1,20 +1,23 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "AasaanVriddhi",
+  "short_name": "AasaanVriddhi",
+  "description": "AasaanVriddhi - Your guide to financial growth and personal development.",
   "icons": [
     {
-      "src": "/favicons/web-app-manifest-192x192.png",
+      "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     },
     {
-      "src": "/favicons/web-app-manifest-512x512.png",
+      "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     }
   ],
+  "start_url": "/",
+  "scope": "/",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone"
